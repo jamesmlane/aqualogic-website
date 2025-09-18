@@ -1,0 +1,155 @@
+/* Brand Colours */
+:root {
+  --aqualogic-blue: #26a9e0;
+  --aqualogic-medblue: #0066cc;
+  --aqualogic-darkblue: #003366;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar spacing*/
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0; /* optional, removes any rounding */
+}
+
+/* Navbar logo */
+.navbar-brand img {
+  height: 100px;
+  box-shadow: 0 0 0 3px var(--aqualogic-blue); /* outer stroke in your brand colour */
+  border-radius: 12px;
+  background-color: white;
+}
+
+/* Navbar button */
+.get-in-touch-btn {
+  background-color: var(--aqualogic-blue);
+  border-color: var(--aqualogic-blue);
+  color: white;           /* text color */
+  font-size: 1.1rem;      /* adjust size to match logo or hero text */
+  padding: 0.6rem 1.2rem; /* vertical and horizontal padding */
+  border-radius: 6px;     /* rounded corners */
+  font-weight: 600;       /* optional, for emphasis */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.get-in-touch-btn:hover {
+  background-color: var(--aqualogic-darkblue);
+  border-color: var(--aqualogic-darkblue);
+  color: white;           /* keep text white on hover */
+}
+
+/* Hero Section */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  justify-content: flex-start; /* aligns to top */
+  /* align-items: center; */
+  padding-top: 0;
+  padding-bottom: 4rem;
+}
+
+/* Allows the hero image to extend to the right of the screen */
+.hero-row {
+  width: 100vw; /* full viewport width */
+}
+
+/* Hero Image
+Source for hero image is https://unsplash.com/photos/body-of-water-under-sky-6ArTTluciuA
+*/
+.hero-image {
+  height: 600px;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1)),
+              url('assets/matt-hardy-6ArTTluciuA-unsplash.jpg') no-repeat center center;
+  background-size: cover;
+  /* border-radius: 12px; */
+}
+
+/* Hero text */
+.hero-text {
+  /* padding-left: 3rem; */
+  /* padding-right: 2rem; */
+  margin-top: 2rem;
+}
+
+/* Hero points */
+.hero-points{
+  margin-top: 2rem;
+}
+
+.hero-points-lead {
+  font-weight: 600;              /* bold */
+  font-style: italic;            /* italicized */
+  color: var(--aqualogic-darkblue);  /* your brand colour */
+  display: block;                /* ensures it sits above the text cleanly */
+  margin-bottom: 0.25rem;        /* little space below the lead text */
+  font-size: 1.2rem;             /* slightly larger than body text */
+}
+
+.hero-points-text {
+  margin-bottom: 0;              /* no extra spacing beyond .mb-3 wrapper */
+  font-size: 1rem;               /* body size (adjust as needed) */
+  color: #333;                   /* neutral, readable colour */
+  line-height: 1.5;              /* nice readability */
+}
+
+.hero h1 {
+  color: var(--aqualogic-blue);
+  font-weight: 700;
+}
+
+/* Meet the team section */
+#team {
+  /* background-color: #f8f9fa; */
+  padding: 5rem 0;
+}
+#team h1 {
+  color: var(--aqualogic-blue);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+#contact h1 {
+  color: var(--aqualogic-blue);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+#contact a {
+  color: var(--aqualogic-darkblue);
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2rem;
+    height: 250px;
+  }
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+.footer a {
+  color: inherit;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
