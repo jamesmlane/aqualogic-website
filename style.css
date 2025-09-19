@@ -112,6 +112,45 @@ Source for hero image is https://unsplash.com/photos/body-of-water-under-sky-6Ar
   font-weight: 700;
 }
 
+/* Biography image overlay */
+.bio-img-overlay-container {
+  position: relative;
+  display: inline-block;
+}
+
+.bio-img {
+  display: block;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.bio-img-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none; /* Allows clicks to pass through to image */
+}
+
+.bio-img-overlay-container:hover .bio-img {
+  filter: brightness(50%); /* Darkens image */
+}
+
+.bio-img-overlay-container:hover .bio-img-overlay-text {
+  opacity: 1;
+}
+
+/* Biography text */
+.bio-text {
+    font-size: 0.85rem; /* Smaller than normal text */
+    line-height: 1.2;   /* Tighter line spacing if needed */
+    color: #555;        /* Optional: slightly muted color */
+}
+
 /* Contact Section */
 #contact {
   background-color: #f8f9fa;
