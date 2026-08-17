@@ -1,0 +1,2 @@
+/* Shared section-heading scale. The hero headline remains intentionally distinct. */
+.section h2{font-size:clamp(34px,3.6vw,50px)}
