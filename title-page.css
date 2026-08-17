@@ -1,0 +1,10 @@
+/* V1 layout-plan treatment, deliberately scoped to the title page only. */
+.title-page{background:linear-gradient(132deg,#062a4d 0%,#003366 72%,#0066cc 150%)}
+.title-page .hero-grid{grid-template-columns:1.05fr .95fr;min-height:610px}
+.title-page h1{max-width:700px}
+.title-page .hero-lede{max-width:660px}
+.title-page .button-primary{background:#8ddcf3}
+.title-page .hero-visual:before{border-color:rgba(141,220,243,.5)}
+.title-credibility{display:flex;align-items:center;gap:12px;margin-top:62px;margin-bottom:0;padding:22px 0;border-top:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.title-credibility span{width:8px;height:8px;border-radius:50%;background:#8ddcf3}
+@media(max-width:850px){.title-page .hero-grid{grid-template-columns:1fr}.title-credibility{margin-top:52px}}
