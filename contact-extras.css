@@ -1,0 +1,8 @@
+/* Optional contact controls and social destinations. */
+.contact-form select{width:100%;padding:13px 14px;border:1px solid rgba(255,255,255,.25);border-radius:3px;outline:0;background:#164875;color:#fff;font:inherit}
+.contact-form select:focus{border-color:var(--water-bright);box-shadow:0 0 0 3px rgba(141,220,243,.14)}
+.contact-form select option{background:#fff;color:var(--ink)}
+.social-links{margin-top:38px;padding-top:24px;border-top:1px solid rgba(255,255,255,.2)}
+.social-links p{margin:0 0 12px;color:rgba(255,255,255,.62);font-size:13px}
+.social-icon{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.42);border-radius:50%;color:#fff;font:700 17px/1 Arial,sans-serif;text-decoration:none;transition:background-color .2s,color .2s,transform .2s}
+.social-icon:hover,.social-icon:focus-visible{background:#fff;color:var(--water-medium);transform:translateY(-2px);outline:0}

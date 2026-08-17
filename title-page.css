@@ -1,4 +1,6 @@
 /* V1 layout-plan treatment, deliberately scoped to the title page only. */
+.wordmark-logo{width:46px;height:46px;flex:0 0 auto;object-fit:contain;border-radius:50%;background:#fff}
+.wordmark-footer .wordmark-logo{width:42px;height:42px;background:transparent}
 .title-page{background:linear-gradient(132deg,#062a4d 0%,#003366 72%,#0066cc 150%)}
 .title-page .hero-grid{grid-template-columns:1.05fr .95fr;min-height:610px}
 .title-page h1{max-width:700px}
@@ -7,4 +9,4 @@
 .title-page .hero-visual:before{border-color:rgba(141,220,243,.5)}
 .title-credibility{display:flex;align-items:center;gap:12px;margin-top:62px;margin-bottom:0;padding:22px 0;border-top:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
 .title-credibility span{width:8px;height:8px;border-radius:50%;background:#8ddcf3}
-@media(max-width:850px){.title-page .hero-grid{grid-template-columns:1fr}.title-credibility{margin-top:52px}}
+@media(max-width:850px){.wordmark-logo{width:40px;height:40px}.wordmark-footer .wordmark-logo{width:40px;height:40px}.title-page .hero-grid{grid-template-columns:1fr}.title-credibility{margin-top:52px}}
