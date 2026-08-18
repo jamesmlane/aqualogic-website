@@ -6,6 +6,7 @@
     <meta name="description" content="AquaLogic Inc. is building mobile water infrastructure to move, store and manage water where permanent infrastructure is constrained.">
     <meta name="theme-color" content="#003366">
     <title>AquaLogic | Mobile Water Infrastructure</title>
+    <link rel="canonical" href="https://www.aqua-logic.ca/">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/aqualogic-favicon-96x96.png">
     <link rel="shortcut icon" href="assets/aqualogic-favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,7 +115,7 @@
                 <h3>Deployable storage</h3>
                 <span class="capability-toggle" aria-hidden="true"></span>
               </summary>
-              <p>Fabric-based storage systems support vessel operations and serve temporary, seasonal, and remote water needs .</p>
+              <p>Fabric-based storage systems support vessel operations and serve temporary, seasonal, and remote water needs.</p>
             </details>
 
             <details class="capability">
@@ -156,7 +157,7 @@
                   <span>Municipal and regional water resilience</span>
                   <span class="application-toggle" aria-hidden="true"></span>
                 </summary>
-                <p>Supply city-scale volumes during seasonal droughts, infrastructure maintenance, or periouds of heightened demand.</p>
+                <p>Supply city-scale volumes during seasonal droughts, infrastructure maintenance, or periods of heightened demand.</p>
               </details>
 
               <details class="application-item">
@@ -332,7 +333,9 @@
 
     <script src="https://unpkg.com/lucide@1.27.0/dist/umd/lucide.min.js"></script>
     <script>
-      lucide.createIcons({ attrs: { 'stroke-width': 1.6 } });
+      if (window.lucide) {
+        lucide.createIcons({ attrs: { 'stroke-width': 1.6 } });
+      }
 
       document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();

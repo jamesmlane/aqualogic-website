@@ -1,5 +1,5 @@
 /* Optional contact controls and social destinations. */
-.contact-form select{width:100%;padding:13px 14px;border:1px solid rgba(255,255,255,.25);border-radius:3px;outline:0;background:#164875;color:#fff;font:inherit}
+.contact-form select{width:100%;padding:13px 14px;border:1px solid rgba(255,255,255,.55);border-radius:3px;outline:0;background:#164875;color:#fff;font:inherit}
 .contact-form select:focus{border-color:var(--water-bright);box-shadow:0 0 0 3px rgba(141,220,243,.14)}
 .contact-form select option{background:#fff;color:var(--ink)}
 .social-links{margin-top:38px;padding-top:24px;border-top:1px solid rgba(255,255,255,.2)}
